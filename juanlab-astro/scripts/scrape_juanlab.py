@@ -327,12 +327,18 @@ def extract_people(soup: BeautifulSoup) -> dict:
     Returns dict with categories: phd_students, masters_students, undergrads, visiting, alumni
     """
     people = {
+        "postdocs": [],
         "phd_students": [],
         "masters_students": [],
         "undergrads": [],
         "visiting": [],
-        "alumni": [],
-        "postdocs": [],
+        "assistants": [],
+        "alumni_postdocs": [],
+        "alumni_phd_students": [],
+        "alumni_masters_students": [],
+        "alumni_undergrads": [],
+        "alumni_visiting": [],
+        "alumni_assistants": [],
     }
     
     content = soup.find("div", class_="dokuwiki") or soup.find("div", id="dokuwiki__content")
@@ -343,6 +349,8 @@ def extract_people(soup: BeautifulSoup) -> dict:
     
     # Category detection keywords
     category_keywords = {
+        "postdoc": "postdocs",
+        "博士後": "postdocs",
         "phd": "phd_students",
         "ph.d": "phd_students",
         "博士": "phd_students",
@@ -356,11 +364,11 @@ def extract_people(soup: BeautifulSoup) -> dict:
         "visiting": "visiting",
         "exchange": "visiting",
         "訪問": "visiting",
-        "alumni": "alumni",
-        "畢業": "alumni",
-        "former": "alumni",
-        "postdoc": "postdocs",
-        "博士後": "postdocs",
+        "assistant": "assistants",
+        "助理": "assistants",
+        "alumni": "alumni_marker", # Marker to switch mode, not a direct category
+        "畢業": "alumni_marker",
+        "former": "alumni_marker",
     }
     
     is_alumni_section = False
@@ -379,31 +387,39 @@ def extract_people(soup: BeautifulSoup) -> dict:
         # Check for category headers
         if element.name in ["h1", "h2", "h3", "h4"]:
             # Check if entering Alumni section
-            if "alumni" in text_lower:
+            if "alumni" in text_lower or "畢業" in text_lower:
                 is_alumni_section = True
-                current_category = "alumni"
+                print("DEBUG: Entered Alumni Section")
                 continue
 
-            # Check if entering a section that might reset Alumni (e.g. Visiting if considered current)
-            # But usually Alumni is at the end. 
-            # If we hit a known category header:
+            # Check for other categories
             category_found = False
             for keyword, category in category_keywords.items():
                 if keyword in text_lower:
+                    if category == "alumni_marker":
+                        is_alumni_section = True
+                        print("DEBUG: Entered Alumni Section (via keyword)")
+                        category_found = True
+                        break
+                    
+                    # Map to specific category
+                    target_category = category
+                    if is_alumni_section:
+                        # Map base categories to alumni equivalents
+                        if category == "postdocs": target_category = "alumni_postdocs"
+                        elif category == "phd_students": target_category = "alumni_phd_students"
+                        elif category == "masters_students": target_category = "alumni_masters_students"
+                        elif category == "undergrads": target_category = "alumni_undergrads"
+                        elif category == "visiting": target_category = "alumni_visiting"
+                        elif category == "assistants": target_category = "alumni_assistants"
+                    
+                    current_category = target_category
+                    course_correction = f"(Alumni mode: {is_alumni_section})"
+                    print(f"DEBUG: Header '{text}' -> Category '{current_category}' {course_correction}")
                     category_found = True
-                    # If we are in alumni section, standard roles map to alumni list
-                    if is_alumni_section: 
-                        if category in ["phd_students", "masters_students", "undergrads", "postdocs"]:
-                            current_category = "alumni"
-                        else:
-                            # Visiting or others, keep as matches (e.g. visiting might be distinct)
-                            current_category = category
-                    else:
-                        current_category = category
                     break
             
-            # If header didn't match any category, we keep previous category or wait?
-            # If it's just "Table of Contents" ignore.
+            # If header didn't match any category, we keep previous category
         
         # Extract member info from list items or paragraphs/table rows
         if element.name in ["li", "p", "tr"] and current_category:
@@ -412,7 +428,7 @@ def extract_people(soup: BeautifulSoup) -> dict:
                 continue
 
             # Debug what we are seeing in current categories (excluding alumni to reduce noise)
-            if current_category in ["phd_students", "masters_students", "postdocs"] and not is_alumni_section:
+            if not current_category.startswith("alumni_"):
                print(f"DEBUG: Checking {element.name} in {current_category}: '{text[:50]}...'")
 
             # Try to parse member format
@@ -433,10 +449,6 @@ def extract_people(soup: BeautifulSoup) -> dict:
                     y_str = year_match.group(1)
                     year_val = int(y_str)
                     year_start = 2000 + year_val if year_val < 50 else 1900 + year_val
-                    
-                    # Remove year from info to find Dept?
-                    # valid dept text usually follows year
-                    # Simple heuristic: take everything after the year digits?
                     dept = info_part.replace(y_str, "", 1).strip(" -;,")
                 else:
                     dept = info_part # No year found
@@ -482,26 +494,17 @@ def extract_people(soup: BeautifulSoup) -> dict:
                 # Fallback: if no parens, might be just "Name" or "Name, Info"
                 # Check if it looks like a person entry (not empty)
                 text_clean = text.strip()
-                if len(text_clean) > 1 and len(text_clean) < 50:
-                    print(f"DEBUG: Unmatched LI: '{text}' -> using as Name")
-                    # Assume entire text is name? Or format: "Name Title"
-                    # Just use as name for now
+                if len(text_clean) > 1 and len(text_clean) < 100: # Increased limit slightly
+                    # Heuristic: If it has "Table of Content" or other wiki elements, skip
+                    if "table of content" in text_clean.lower() or "jump to" in text_clean.lower():
+                        continue
+
+                    # print(f"DEBUG: Unmatched LI: '{text}' -> using as Name")
                     
-                    # Check if there are years in the text?
+                    # Assume entire text is name? Or format: "Name Title"
                     year_start = 2024
-                    dept = ""
                     name = text_clean
                     
-                    # Try to find year if any
-                    year_match = re.search(r'(\d{4})', text_clean)
-                    if not year_match:
-                         # Try 2 digits
-                         year_match = re.search(r'\b(\d{2})\b', text_clean) # word boundary
-                    
-                    if year_match:
-                        # If year found, maybe extract it?
-                        pass 
-                        
                     member = {
                         "name_zh": name if re.search(r'[\u4e00-\u9fff]', name) else "",
                         "name_en": name if not re.search(r'[\u4e00-\u9fff]', name) else "",
@@ -512,14 +515,12 @@ def extract_people(soup: BeautifulSoup) -> dict:
                         "email": None,
                     }
                     
-                    # Try to find photo in this LI even if text didn't match
+                    # Try to find photo
                     img = element.find("img")
                     if img:
                         member["photo"] = make_absolute_url(img.get("src", ""))
                         
                     people[current_category].append(member)
-                else:
-                    print(f"DEBUG: Skipping LI: '{text}'")
 
     return people
 

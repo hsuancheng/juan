@@ -4,18 +4,19 @@ import MemberCard from "./MemberCard.astro";
 interface Props {
   members: any[];
   title: string;
+  variant?: "default" | "compact";
 }
 
-const { members, title } = Astro.props;
+const { members, title, variant = "default" } = Astro.props;
 ---
 
 <section class="section">
   <div class="container">
     <h2 class="section-title">{title}</h2>
     
-    <div class="people-grid">
+    <div class={`people-grid ${variant}`}>
       {members.map((member) => (
-        <MemberCard {...member} />
+        <MemberCard {...member} variant={variant} />
       ))}
     </div>
   </div>
@@ -27,6 +28,11 @@ const { members, title } = Astro.props;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
+  }
+  
+  .people-grid.compact {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-md);
   }
   
   .section-title {

@@ -7,24 +7,27 @@ interface Props {
   research?: string[];
   photo?: string;
   email?: string;
+  variant?: "default" | "compact";
 }
 
-const { name_zh, name_en, title, department, research, photo, email } = Astro.props;
+const { name_zh, name_en, title, department, research, photo, email, variant = "default" } = Astro.props;
 
 // Helper to get initials
 const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
 ---
 
-<div class="member-card">
-  <div class="member-photo">
-    {photo ? (
-      <img src={photo} alt={name_en} loading="lazy" />
-    ) : (
-      <div class="photo-placeholder">
-        <span>{initials}</span>
-      </div>
-    )}
-  </div>
+<div class={`member-card ${variant}`}>
+  {variant !== 'compact' && (
+    <div class="member-photo">
+      {photo ? (
+        <img src={photo} alt={name_en} loading="lazy" />
+      ) : (
+        <div class="photo-placeholder">
+          <span>{initials}</span>
+        </div>
+      )}
+    </div>
+  )}
   <div class="member-info">
     <h3 class="member-name">
       <span class="name-zh">{name_zh}</span>
@@ -32,7 +35,7 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
     </h3>
     {title && <p class="member-title">{title}</p>}
     {department && <p class="member-dept">{department}</p>}
-    {research && research.length > 0 && (
+    {research && research.length > 0 && variant !== 'compact' && (
       <div class="member-research">
         <h4>Research Interests:</h4>
         <ul>
@@ -40,6 +43,11 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
         </ul>
       </div>
     )}
+    {/* For compact mode, show simple research or just dept */}
+    {research && research.length > 0 && variant === 'compact' && (
+      <p class="compact-research">{research.join(', ')}</p>
+    )}
+    
     {email && (
       <a href={`mailto:${email}`} class="member-email">{email}</a>
     )}
@@ -59,6 +67,14 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
     align-items: center;
     text-align: center;
     box-shadow: var(--shadow-sm);
+    height: 100%;
+  }
+
+  .member-card.compact {
+    padding: 1rem;
+    align-items: flex-start;
+    text-align: left;
+    min-height: auto;
   }
   
   .member-card:hover {
@@ -97,11 +113,24 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
   .member-name {
     margin-bottom: 0.5rem;
   }
+
+  .compact .member-name {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+  }
   
   .name-zh {
     display: block;
     font-size: 1.25rem;
     color: var(--color-text);
+  }
+
+  .compact .name-zh {
+    font-size: 1.1rem;
+    font-weight: 600;
   }
   
   .name-en {
@@ -122,12 +151,24 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
     color: var(--color-text-muted);
     margin-bottom: 1rem;
   }
+
+  .compact .member-dept {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
   
   .member-research {
     font-size: 0.85rem;
     text-align: left;
     width: 100%;
     margin-top: auto; /* Push to bottom */
+  }
+
+  .compact-research {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
   
   .member-research h4 {
@@ -147,6 +188,11 @@ const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
     font-size: 0.9rem;
     color: var(--color-primary);
     text-decoration: none;
+  }
+
+  .compact .member-email {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
   }
   
   .member-email:hover {

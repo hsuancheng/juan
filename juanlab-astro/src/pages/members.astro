@@ -3,14 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import PeopleGrid from "../components/people/PeopleGrid.astro";
 import peopleData from "../content/people.json";
 
-// Order of display
 const sections = [
+  { key: "postdocs", title: "Postdoctoral Researchers" },
   { key: "phd_students", title: "PhD Students" },
   { key: "masters_students", title: "Master Students" },
-  { key: "postdocs", title: "Postdoctoral Researchers" },
   { key: "undergrads", title: "Undergraduates" },
   { key: "visiting", title: "Visiting Students" },
-  { key: "alumni", title: "Alumni" },
+  { key: "assistants", title: "Research Assistants" },
+  { key: "alumni_postdocs", title: "Alumni - Postdoctoral Researchers" },
+  { key: "alumni_phd_students", title: "Alumni - PhD Students" },
+  { key: "alumni_masters_students", title: "Alumni - Master Students" },
+  { key: "alumni_undergrads", title: "Alumni - Undergraduates" },
+  { key: "alumni_visiting", title: "Alumni - Visiting Scholars" },
+  { key: "alumni_assistants", title: "Alumni - Research Assistants" },
 ];
 ---
 
@@ -27,7 +32,7 @@ const sections = [
     if (!members || members.length === 0) return null;
     
     return (
-      <PeopleGrid title={title} members={members} />
+      <PeopleGrid title={title} members={members} variant={key.startsWith('alumni') ? 'compact' : 'default'} />
     );
   })}
 </BaseLayout>
