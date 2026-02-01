@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/home/Hero.astro";
+import NewsTimeline from "../components/home/NewsTimeline.astro";
+import ResearchHighlights from "../components/home/ResearchHighlights.astro";
+---
+
+<BaseLayout title="Home">
+  <Hero 
+    title="Systems Biology Laboratory" 
+    subtitle="Exploring the complexity of life through systems biology" 
+    backgroundImage={`${import.meta.env.BASE_URL}/images/covers/cover_20240812_v2.webp`}
+  />
+
+  <NewsTimeline limit={5} />
+  
+  <ResearchHighlights />
+  
+  <section class="section">
+    <div class="container">
+      <h2>Welcome</h2>
+      <p>Welcome to Prof. Hsueh-Fen Juan's lab at National Taiwan University.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+
+<style>
+  .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 51, 102, 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+  }
+</style>

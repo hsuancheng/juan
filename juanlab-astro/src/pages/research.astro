@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCards from "../components/home/ProjectCards.astro";
+import ResearchHighlights from "../components/home/ResearchHighlights.astro";
+---
+
+<BaseLayout title="Research">
+  <div class="page-header">
+    <div class="container">
+      <h1>Research & Publications</h1>
+    </div>
+  </div>
+
+  <ResearchHighlights />
+  
+  <ProjectCards />
+
+  <section class="section">
+    <div class="container">
+      <h2>Publications</h2>
+      <p>For a full list of publications, please visit <a href="https://scholar.google.com/citations?user=ExampleID" target="_blank">Google Scholar</a>.</p>
+      
+      <div class="alert">
+        <p>Full publication list migration is in progress.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    background: var(--color-secondary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    margin-top: 80px;
+  }
+  
+  .alert {
+    background: #f0f9ff;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid #bae6fd;
+    color: #0369a1;
+    margin-top: 1rem;
+  }
+</style>

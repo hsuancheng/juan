@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PeopleGrid from "../components/people/PeopleGrid.astro";
+import peopleData from "../content/people.json";
+
+// Order of display
+const sections = [
+  { key: "phd_students", title: "PhD Students" },
+  { key: "masters_students", title: "Master Students" },
+  { key: "postdocs", title: "Postdoctoral Researchers" },
+  { key: "undergrads", title: "Undergraduates" },
+  { key: "visiting", title: "Visiting Students" },
+  { key: "alumni", title: "Alumni" },
+];
+---
+
+<BaseLayout title="Members">
+  <div class="page-header">
+    <div class="container">
+      <h1>Lab Members</h1>
+    </div>
+  </div>
+
+  {sections.map(({ key, title }) => {
+    // @ts-ignore
+    const members = peopleData[key];
+    if (!members || members.length === 0) return null;
+    
+    return (
+      <PeopleGrid title={title} members={members} />
+    );
+  })}
+</BaseLayout>
+
+<style>
+  .page-header {
+    background: var(--color-secondary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    margin-top: 80px; /* Header height */
+  }
+  
+  h1 {
+    color: white;
+    margin: 0;
+  }
+</style>

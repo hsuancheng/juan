@@ -1,0 +1,39 @@
+---
+import MemberCard from "./MemberCard.astro";
+
+interface Props {
+  members: any[];
+  title: string;
+}
+
+const { members, title } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">{title}</h2>
+    
+    <div class="people-grid">
+      {members.map((member) => (
+        <MemberCard {...member} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+  }
+  
+  .section-title {
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: var(--spacing-lg);
+    display: inline-block;
+    font-size: 2rem;
+  }
+</style>

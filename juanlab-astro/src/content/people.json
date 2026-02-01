@@ -1,0 +1,215 @@
+{
+  "phd_students": [],
+  "masters_students": [],
+  "undergrads": [
+    {
+      "name_zh": "廖映宸",
+      "name_en": "",
+      "year_start": 2023,
+      "department": "Med",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林詩敏",
+      "name_en": "",
+      "year_start": 2021,
+      "department": "CS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李孟達",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "VM",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳昇原",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "ME",
+      "research": [],
+      "photo": null,
+      "email": null
+    }
+  ],
+  "visiting": [
+    {
+      "name_zh": "林靖雅",
+      "name_en": "Ching-Ya Lin",
+      "year_start": 2025,
+      "department": "",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾子洋",
+      "name_en": "Tzu-Yang Tseng",
+      "year_start": 2023,
+      "department": "25",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李偉豪",
+      "name_en": "Wei-Hao Lee",
+      "year_start": 2019,
+      "department": "",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李姿瑩",
+      "name_en": "Tzu-ying Lee",
+      "year_start": 2008,
+      "department": "09",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄭旭傑",
+      "name_en": "Hsu-Chieh Cheng",
+      "year_start": 2006,
+      "department": "07",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "徐維澤",
+      "name_en": "Victor Wei Tse Hsu",
+      "year_start": 2006,
+      "department": "07",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李嘉哲",
+      "name_en": "Jia-Je Li",
+      "year_start": 2005,
+      "department": "08",
+      "research": [],
+      "photo": null,
+      "email": null
+    }
+  ],
+  "alumni": [],
+  "postdocs": [
+    {
+      "name_zh": "謝巧慧",
+      "name_en": "Chiao-Hui Hsieh",
+      "year_start": 2021,
+      "department": "24",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃振綜",
+      "name_en": "Chen-Tsung Huang",
+      "year_start": 2019,
+      "department": "23",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張海妍",
+      "name_en": "Chantal Hoi Yin Cheung",
+      "year_start": 2018,
+      "department": "19",
+      "research": [
+        "Research Scientist @ Institute of Atomic and Molecular Sciences",
+        "Academia Sinica"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張怡雯",
+      "name_en": "Yi-Wen Chang",
+      "year_start": 2016,
+      "department": "22",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張心儀",
+      "name_en": "Hsin-Yi Chang",
+      "year_start": 2013,
+      "department": "15",
+      "research": [
+        "Assistant Professor @ NDMC Website"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "胡家瑋",
+      "name_en": "Chia-Wei Hu",
+      "year_start": 2013,
+      "department": "14",
+      "research": [
+        "@ University of Wisconsin"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許家郎",
+      "name_en": "Chia-Lang Hsu",
+      "year_start": 2012,
+      "department": "17",
+      "research": [
+        "Project Assistant Research Fellow @ NTUH Hsu Lab"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "傅思縉",
+      "name_en": "Szu-Chin Fu",
+      "year_start": 2011,
+      "department": "12",
+      "research": [
+        "@ UTSW"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林俐伶",
+      "name_en": "Li-Ling Lin",
+      "year_start": 2010,
+      "department": "14",
+      "research": [
+        "@ University of Texas Health Science Center at San Antonio"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃翠琴",
+      "name_en": "Tsui-Chin Huang",
+      "year_start": 2009,
+      "department": "10",
+      "research": [
+        "Associate Professor @ TMU Website"
+      ],
+      "photo": null,
+      "email": null
+    }
+  ]
+}

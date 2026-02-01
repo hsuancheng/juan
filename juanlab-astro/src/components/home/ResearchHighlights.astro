@@ -1,0 +1,102 @@
+---
+import researchData from "../../content/research.json";
+
+// Take first 2 highlights or all
+const highlights = researchData.slice(0, 3);
+---
+
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Research Highlights</h2>
+    
+    <div class="highlights-grid">
+      {highlights.map((item) => (
+        <article class="highlight-card">
+          {item.image && (
+            <div class="highlight-image">
+               <img src={item.image.startsWith('http') ? item.image : `${import.meta.env.BASE_URL}${item.image}`} alt={item.title_en || item.title_zh} loading="lazy" />
+            </div>
+          )}
+          <div class="highlight-content">
+            <h3>{item.title_en || item.title_zh}</h3>
+            {/* Show first paragraph */}
+            {item.description && item.description.length > 0 && (
+              <p class="clamp-text">{item.description[0]}</p>
+            )}
+            <a href={`${import.meta.env.BASE_URL}/research#${item.id}`} class="read-more">Read More &rarr;</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+  
+  .highlight-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .highlight-image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+  
+  .highlight-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .highlight-card:hover .highlight-image img {
+    transform: scale(1.05);
+  }
+  
+  .highlight-content {
+    padding: var(--spacing-md);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-secondary);
+  }
+  
+  .clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    margin-top: auto;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+</style>

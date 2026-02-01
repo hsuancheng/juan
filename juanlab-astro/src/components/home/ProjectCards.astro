@@ -1,0 +1,75 @@
+---
+import projectsData from "../../content/projects.json";
+
+// Take first 3 projects
+const projects = projectsData.slice(0, 3);
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Current Projects</h2>
+    
+    <div class="projects-grid">
+      {projects.map((project) => (
+        <div class="project-card glass">
+          <div class="project-number">{project.number.toString().padStart(2, '0')}</div>
+          <div class="project-content">
+            <h3>{project.title_en || project.title_zh}</h3>
+            {project.title_zh && project.title_en && <p class="chinese-title">{project.title_zh}</p>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .project-card {
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: white;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+  }
+  
+  .project-number {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0, 102, 204, 0.1);
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    line-height: 1;
+  }
+  
+  .project-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .chinese-title {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+  }
+</style>

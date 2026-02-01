@@ -1,0 +1,155 @@
+---
+interface Props {
+  name_zh: string;
+  name_en: string;
+  title?: string;
+  department?: string;
+  research?: string[];
+  photo?: string;
+  email?: string;
+}
+
+const { name_zh, name_en, title, department, research, photo, email } = Astro.props;
+
+// Helper to get initials
+const initials = name_en.split(' ').map((n) => n[0]).join('').toUpperCase();
+---
+
+<div class="member-card">
+  <div class="member-photo">
+    {photo ? (
+      <img src={photo} alt={name_en} loading="lazy" />
+    ) : (
+      <div class="photo-placeholder">
+        <span>{initials}</span>
+      </div>
+    )}
+  </div>
+  <div class="member-info">
+    <h3 class="member-name">
+      <span class="name-zh">{name_zh}</span>
+      <span class="name-en">{name_en}</span>
+    </h3>
+    {title && <p class="member-title">{title}</p>}
+    {department && <p class="member-dept">{department}</p>}
+    {research && research.length > 0 && (
+      <div class="member-research">
+        <h4>Research Interests:</h4>
+        <ul>
+          {research.map((topic) => <li>{topic}</li>)}
+        </ul>
+      </div>
+    )}
+    {email && (
+      <a href={`mailto:${email}`} class="member-email">{email}</a>
+    )}
+  </div>
+</div>
+
+<style>
+  .member-card {
+    background: var(--glass-bg, rgba(255, 255, 255, 0.8));
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.5));
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+  }
+  
+  .member-photo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-primary);
+  }
+  
+  .member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .member-name {
+    margin-bottom: 0.5rem;
+  }
+  
+  .name-zh {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--color-text);
+  }
+  
+  .name-en {
+    display: block;
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+  }
+  
+  .member-title {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .member-dept {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+  }
+  
+  .member-research {
+    font-size: 0.85rem;
+    text-align: left;
+    width: 100%;
+    margin-top: auto; /* Push to bottom */
+  }
+  
+  .member-research h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-secondary);
+  }
+  
+  .member-research ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  
+  .member-email {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  .member-email:hover {
+    text-decoration: underline;
+  }
+</style>

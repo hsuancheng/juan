@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Join Us">
+  <div class="page-header">
+    <div class="container">
+      <h1>Join Us</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2>We are recruiting!</h2>
+        <p class="intro">
+          We welcome enthusiastic students and researchers to join our team. 
+          If you are interested in systems biology, bioinformatics, and drug discovery, please contact us.
+        </p>
+        
+        <div class="positions">
+          <article class="position-card">
+            <h3>Postdoctoral Fellows</h3>
+            <p>We are looking for motivated candidates with a PhD in related fields.</p>
+            <ul>
+              <li>Experience in NGS data analysis</li>
+              <li>Strong programming skills (Python/R)</li>
+              <li>Good publication record</li>
+            </ul>
+          </article>
+          
+          <article class="position-card">
+            <h3>Graduate Students</h3>
+            <p>PhD and Master students are welcome.</p>
+          </article>
+        </div>
+
+        <div class="contact-info glass">
+          <h3>Contact Information</h3>
+          <p><strong>Prof. Hsueh-Fen Juan</strong></p>
+          <p>Email: <a href="mailto:yukijuan@ntu.edu.tw">yukijuan@ntu.edu.tw</a></p>
+          <p>Location: Room 1105, Life Science Building, National Taiwan University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    background: var(--color-secondary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    margin-top: 80px;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .position-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .contact-info {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+</style>

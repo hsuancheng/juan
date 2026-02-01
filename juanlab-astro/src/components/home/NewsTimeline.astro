@@ -1,0 +1,113 @@
+---
+import newsData from "../../content/news.json";
+
+interface Props {
+  limit?: number;
+  showAll?: boolean;
+}
+
+const { limit, showAll = false } = Astro.props;
+
+// Filter and sort news
+const news = showAll ? newsData : newsData.slice(0, limit || 10);
+---
+
+<section class="section news-section">
+  <div class="container">
+    <h2 class="section-title">Latest News</h2>
+    
+    <div class="timeline">
+      {news.map((item) => (
+        <div class="timeline-item">
+          <div class="date">{item.date}</div>
+          <div class="content">
+            {item.link ? (
+              <a href={item.link} target="_blank" rel="noopener noreferrer" class="title-link">
+                {item.title}
+              </a>
+            ) : (
+              <span class="title">{item.title}</span>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    {!showAll && (
+      <div class="more-link">
+        <a href={`${import.meta.env.BASE_URL}/news`} class="btn-link">View All News &rarr;</a>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .timeline {
+    position: relative;
+    margin-top: var(--spacing-lg);
+    border-left: 2px solid var(--color-bg); 
+    background: linear-gradient(to bottom, var(--color-primary) 0%, transparent 100%) no-repeat;
+    background-size: 2px 100%;
+    margin-left: 1rem;
+    padding-left: 2rem;
+  }
+  
+  /* Use a simpler approach for timeline line if gradient doesn't work well */
+  .timeline {
+    background: none;
+    border-left: 2px solid rgba(0, 102, 204, 0.2);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.4rem;
+    top: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+  }
+  
+  .date {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .title-link {
+    color: var(--color-text);
+    font-weight: 500;
+    display: block;
+  }
+  
+  .title-link:hover {
+    color: var(--color-accent);
+  }
+  
+  .more-link {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+  
+  .btn-link:hover {
+    background: var(--color-primary);
+    color: white;
+  }
+</style>

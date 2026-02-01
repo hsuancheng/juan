@@ -1,0 +1,160 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import piData from "../content/pi.json";
+
+const { name_en, name_zh, title, bio, education, positions, awards, photo } = piData;
+---
+
+<BaseLayout title="About PI">
+  <div class="page-header">
+    <div class="container">
+      <h1>Principal Investigator</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="pi-profile">
+        <div class="pi-image-col">
+          {photo && (
+            <div class="pi-photo-wrapper">
+               <img src={photo.startsWith('http') ? photo : `${import.meta.env.BASE_URL}${photo}`} alt={name_en} />
+            </div>
+          )}
+          <div class="pi-contact">
+             <h3>{name_en} <span class="zh">{name_zh}</span></h3>
+             <p class="pi-title">{title}</p>
+             <p>{piData.department}</p>
+             <p>{piData.institution}</p>
+          </div>
+        </div>
+        
+        <div class="pi-content-col">
+          <div class="bio-section">
+            <h2>Biography</h2>
+            <div class="bio-text" set:html={bio.replace(/\n\n/g, '<p>').replace(/\n/g, '<br>')} />
+          </div>
+          
+          <div class="info-grid">
+            <div class="info-block">
+              <h3>Education</h3>
+              <ul class="styled-list">
+                {education.map(item => <li>{item}</li>)}
+              </ul>
+            </div>
+            
+            <div class="info-block">
+              <h3>Positions</h3>
+              <ul class="styled-list">
+                {positions.map(item => <li>{item}</li>)}
+              </ul>
+            </div>
+            
+             <div class="info-block full-width">
+              <h3>Awards & Honors</h3>
+              <ul class="styled-list columns">
+                {awards.map(item => <li>{item}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    background: var(--color-secondary);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    margin-top: 80px;
+  }
+
+  .pi-profile {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  @media (max-width: 768px) {
+    .pi-profile {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .pi-photo-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .zh {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+  }
+  
+  .pi-title {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  
+  .bio-text {
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  @media (max-width: 640px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .full-width {
+    grid-column: 1 / -1;
+  }
+  
+  h3 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .styled-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .styled-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .styled-list li::before {
+    content: "•";
+    color: var(--color-primary);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .columns {
+    columns: 2;
+  }
+  
+  @media (max-width: 640px) {
+    .columns {
+      columns: 1;
+    }
+  }
+</style>

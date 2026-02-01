@@ -1,0 +1,23 @@
+[
+  {
+    "id": "project-1",
+    "number": 1,
+    "title_zh": "",
+    "title_en": "Multi-omics and big data analysis for COVID-19 drug discovery",
+    "description": ""
+  },
+  {
+    "id": "project-2",
+    "number": 2,
+    "title_zh": "",
+    "title_en": "Elucidating the intercellular crosstalk via tunnelling nanotubes in neuroblastoma",
+    "description": ""
+  },
+  {
+    "id": "project-3",
+    "number": 3,
+    "title_zh": "",
+    "title_en": "Single-cell network-based drug discovery for neuroblastoma",
+    "description": ""
+  }
+]
