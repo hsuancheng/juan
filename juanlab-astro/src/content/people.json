@@ -1,45 +1,265 @@
 {
-  "phd_students": [],
-  "masters_students": [],
+  "phd_students": [
+    {
+      "name_zh": "黃晨豪",
+      "name_en": "Chen-Hao Huang",
+      "year_start": 2019,
+      "department": "BEBI",
+      "research": [
+        "Bioinformatics Virtual screening for drug discovery Single-cell RNA seq analysis"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=818a94&media=members:%E9%BB%83%E6%99%A8%E8%B1%AA.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "王詠翔",
+      "name_en": "Yung-Hsiang Wang",
+      "year_start": 2023,
+      "department": "LS; 22-23 LS ms",
+      "research": [
+        "Proteomics Cancer research"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=fd3a32&media=members:%E7%8E%8B%E8%A9%A0%E7%BF%94.png",
+      "email": null
+    },
+    {
+      "name_zh": "蘇意伊",
+      "name_en": "Yi-Yi Su",
+      "year_start": 2023,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=9ceb13&media=members:%E8%98%87%E6%84%8F%E4%BC%8A.png",
+      "email": null
+    },
+    {
+      "name_zh": "高永碩",
+      "name_en": "Yung-Shuo Kao",
+      "year_start": 2024,
+      "department": "BEBI",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=510cfb&media=members:%E9%AB%98%E6%B0%B8%E7%A2%A9.png",
+      "email": null
+    },
+    {
+      "name_zh": "林靖雅",
+      "name_en": "Ching-Ya Lin",
+      "year_start": 2025,
+      "department": "TIGP, w/ Prof. Huang",
+      "research": [
+        "Bioinformatics Cancer research"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=e17a68&media=members:%E6%9E%97%E9%9D%96%E9%9B%85.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "唐當晴",
+      "name_en": "Tang-Ching Tang",
+      "year_start": 2025,
+      "department": "GSB",
+      "research": [
+        "Bioinformatics"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=c7c30f&media=members:tang-ching_tang.jpg",
+      "email": null
+    }
+  ],
+  "masters_students": [
+    {
+      "name_zh": "陳柏安",
+      "name_en": "Po-An Chen",
+      "year_start": 2023,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=7fa56e&media=members:%E9%99%B3%E6%9F%8F%E5%AE%89.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "黃貞諭",
+      "name_en": "Chen-Yu Huang",
+      "year_start": 2024,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=071a68&media=members:%E9%BB%83%E8%B2%9E%E8%AB%AD.png",
+      "email": null
+    },
+    {
+      "name_zh": "楊閎翔",
+      "name_en": "Hong-Shian Yang",
+      "year_start": 2024,
+      "department": "BEBI",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=63df86&media=members:%E6%A5%8A%E9%96%8E%E7%BF%94.png",
+      "email": null
+    },
+    {
+      "name_zh": "俞松林",
+      "name_en": "Sung-Lin Yu",
+      "year_start": 2024,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=4b292f&media=members:%E4%BF%9E%E6%9D%BE%E6%9E%972.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "馬敏絲",
+      "name_en": "Min-Szu Ma",
+      "year_start": 2024,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=bc9785&media=members:%E9%A6%AC%E6%95%8F%E7%B5%B22.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "鐘若綺",
+      "name_en": "Jo-Chi Chung",
+      "year_start": 2024,
+      "department": "MCB",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=b4cab3&media=members:%E9%90%98%E8%8B%A5%E7%B6%BA2.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Tiara Mustika Fanselly",
+      "year_start": 2024,
+      "department": "LS",
+      "research": [
+        "Single-cell omics"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=9d18c1&media=members:tiara_mustika_fanselly_2.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "苑欣佑",
+      "name_en": "Hsin-Yo Yuan",
+      "year_start": 2025,
+      "department": "BEBI; 23-25 BST",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=37896c&media=members:hsin-yo_yuan.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "石孟澔",
+      "name_en": "Meng-Hao Shih",
+      "year_start": 2025,
+      "department": "LS",
+      "research": [
+        "Bioinformatics Single-cell omics"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=3265af&media=members:meng-hao_shih.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "薛仲甫",
+      "name_en": "Zhong-Fu Xue",
+      "year_start": 2025,
+      "department": "MCB",
+      "research": [
+        "Cell biology"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=013af3&media=members:zhong-fu_xue.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "李冠澂",
+      "name_en": "Kuan-Cheng Li",
+      "year_start": 2025,
+      "department": "BEBI",
+      "research": [
+        "Bioinformatics"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=f8fad9&media=members:kuan-cheng_li.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "曾祺媛",
+      "name_en": "Chi-Yuan Tseng",
+      "year_start": 2026,
+      "department": "LS",
+      "research": [],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=17aa41&media=members:%E6%9B%BE%E7%A5%BA%E5%AA%9B2.jpg",
+      "email": null
+    }
+  ],
   "undergrads": [
     {
-      "name_zh": "廖映宸",
-      "name_en": "",
-      "year_start": 2023,
-      "department": "Med",
-      "research": [],
-      "photo": null,
+      "name_zh": "李瑜沂",
+      "name_en": "Yu-Yi Li",
+      "year_start": 2025,
+      "department": "ENT",
+      "research": [
+        "Cancer research"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=6c1147&media=members:%E6%9D%8E%E7%91%9C%E6%B2%82_v2.jpg",
       "email": null
     },
     {
-      "name_zh": "林詩敏",
-      "name_en": "",
-      "year_start": 2021,
-      "department": "CS",
-      "research": [],
-      "photo": null,
+      "name_zh": "胡秦瑜",
+      "name_en": "Chin-Yu Hu",
+      "year_start": 2025,
+      "department": "LS",
+      "research": [
+        "Single-cell multiomics analysis"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=ab5e97&media=members:chin-yu_hu.jpg",
       "email": null
     },
     {
-      "name_zh": "李孟達",
+      "name_zh": "吳翊弘",
       "name_en": "",
-      "year_start": 2008,
-      "department": "VM",
+      "year_start": 2026,
+      "department": "CKHS 建國中學",
       "research": [],
-      "photo": null,
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=611995&media=members:%E7%B4%80%E6%98%95%E8%BE%B0%E5%92%8C%E5%90%B3%E7%BF%8A%E5%BC%98.jpg",
       "email": null
     },
     {
-      "name_zh": "吳昇原",
+      "name_zh": "紀昕辰",
       "name_en": "",
-      "year_start": 2008,
-      "department": "ME",
+      "year_start": 2026,
+      "department": "CKHS 建國中學",
       "research": [],
-      "photo": null,
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=611995&media=members:%E7%B4%80%E6%98%95%E8%BE%B0%E5%92%8C%E5%90%B3%E7%BF%8A%E5%BC%98.jpg",
       "email": null
     }
   ],
   "visiting": [
+    {
+      "name_zh": "",
+      "name_en": "Jan Gehrke",
+      "year_start": 2025,
+      "department": "Feb-June, , Visiting student from Ulm University",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吉海周",
+      "name_en": "YOSHIKAI Hirono",
+      "year_start": 2022,
+      "department": "Nov, -Jun, 23, Patent Examiner from Japan Patent Office",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "James Winkler",
+      "year_start": 2015,
+      "department": "Aug, -Jan, 16, Fulbright Postdoctoral; June-Aug 14, Visiting student from Texas A&M",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Keesha Erickson",
+      "year_start": 2016,
+      "department": "Jun-Aug, , Visiting student from University of Colorado-Boulder",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
     {
       "name_zh": "林靖雅",
       "name_en": "Ching-Ya Lin",
@@ -68,10 +288,37 @@
       "email": null
     },
     {
+      "name_zh": "陳卓逸",
+      "name_en": "Cho-Yi Chen",
+      "year_start": 2009,
+      "department": "10 AS, w/ Prof. ST Chen; GSB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
       "name_zh": "李姿瑩",
       "name_en": "Tzu-ying Lee",
       "year_start": 2008,
       "department": "09",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李家璿",
+      "name_en": "Chia-Shyuan Lee",
+      "year_start": 2006,
+      "department": "09, part-time",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張智欽",
+      "name_en": "Chi-Chin Chang",
+      "year_start": 2006,
+      "department": "08 YM-BMI; BEBI phd",
       "research": [],
       "photo": null,
       "email": null
@@ -104,8 +351,7 @@
       "email": null
     }
   ],
-  "alumni": [],
-  "postdocs": [
+  "alumni": [
     {
       "name_zh": "謝巧慧",
       "name_en": "Chiao-Hui Hsieh",
@@ -209,6 +455,1993 @@
         "Associate Professor @ TMU Website"
       ],
       "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "游佩蓁",
+      "name_en": "Pei-Chen Yu",
+      "year_start": 2018,
+      "department": "25 MCB; postdoc",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李蒔青",
+      "name_en": "Shih-Ching Lee",
+      "year_start": 2022,
+      "department": "25 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "高翊竣",
+      "name_en": "Yi-Chun Kao",
+      "year_start": 2017,
+      "department": "24 LS; postdoc LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳凱普",
+      "name_en": "Kai-Pu Chen",
+      "year_start": 2015,
+      "department": "23 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張維晉",
+      "name_en": "Wei-Chin Chang",
+      "year_start": 2020,
+      "department": "22 LS, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "杜岳華",
+      "name_en": "Yueh-Hua Tu",
+      "year_start": 2019,
+      "department": "23 TIGP, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Samarth Gupta",
+      "year_start": 2019,
+      "department": "20 TIGP, Rotation",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王薇瑄",
+      "name_en": "Wei-Hsuan Wang",
+      "year_start": 2016,
+      "department": "21 GSB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "謝巧慧",
+      "name_en": "Chiao-Hui Hsieh",
+      "year_start": 2016,
+      "department": "20 MCB; postdoc LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "游文萱",
+      "name_en": "Wen-Hsuan Yu",
+      "year_start": 2015,
+      "department": "22 BEBI, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄞偈帆",
+      "name_en": "Chieh-Fan Yin",
+      "year_start": 2014,
+      "department": "21 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "葉舒平",
+      "name_en": "Shu-Ping Ye",
+      "year_start": 2014,
+      "department": "15 MCB, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "謝立群",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "14 MCB, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃振綜",
+      "name_en": "Chen-Tsung Huang",
+      "year_start": 2012,
+      "department": "19 BEBI; postdoc",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張海妍",
+      "name_en": "Chantal Hoi Yin Cheung",
+      "year_start": 2012,
+      "department": "18 MCB; postdoc LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李佳憲",
+      "name_en": "Chia-Hsien Lee",
+      "year_start": 2012,
+      "department": "17 BEBI, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳卓逸",
+      "name_en": "Cho-Yi Chen",
+      "year_start": 2010,
+      "department": "15 GSB",
+      "research": [
+        "Assistant Professor @ National Yang Ming University Website"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "胡家瑋",
+      "name_en": "Chia-Wei Hu",
+      "year_start": 2009,
+      "department": "13 MCB; postdoc MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "謝佩君",
+      "name_en": "Pei-Chun Hsieh",
+      "year_start": 2009,
+      "department": "10 BEBI, dropout, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張心儀",
+      "name_en": "Hsin-Yi Chang",
+      "year_start": 2008,
+      "department": "13 MCB; postdoc MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "章人勻",
+      "name_en": "Jen-Yun Chang",
+      "year_start": 2008,
+      "department": "12, 17-19 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張智欽",
+      "name_en": "Chi-Chin Chang",
+      "year_start": 2008,
+      "department": "BEBI, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林振慶",
+      "name_en": "Cheng-Chin Lin",
+      "year_start": 2007,
+      "department": "12 BEBI",
+      "research": [
+        "Assistant Professor @ National Yang Ming University Website"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林俐伶",
+      "name_en": "Li-Ling Lin",
+      "year_start": 2006,
+      "department": "10 MCB; postdoc MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾建偉",
+      "name_en": "Chien-Wei Tseng",
+      "year_start": 2005,
+      "department": "12 MCB",
+      "research": [
+        "@ National Health Research Institutes"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "方昱慶",
+      "name_en": "Yu-Ching Fang",
+      "year_start": 2005,
+      "department": "09 MCB, dropout, w/ Prof. Huang & CSIE Prof. Hsin-Hsi Chen",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃翠琴",
+      "name_en": "Tsui-Chin Huang",
+      "year_start": 2005,
+      "department": "09 MCB; postdoc MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Phuong-Uyen Nguyen-Hoang",
+      "year_start": 2023,
+      "department": "26 GSB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張家銘",
+      "name_en": "Chia-Ming Chang",
+      "year_start": 2023,
+      "department": "25 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾鴻明",
+      "name_en": "Hong-Ming Tseng",
+      "year_start": 2023,
+      "department": "25 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳品妤",
+      "name_en": "Pin-Yu Chen",
+      "year_start": 2023,
+      "department": "25 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "高翊竣",
+      "name_en": "Yi-Chun Kao",
+      "year_start": 2016,
+      "department": "17 LS; LS phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許博寓",
+      "name_en": "Po-Yu Hsu",
+      "year_start": 2020,
+      "department": "24 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳彥仁",
+      "name_en": "Yen-Jen Chen",
+      "year_start": 2022,
+      "department": "24 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "石睿嘉",
+      "name_en": "Jui-Chia Shir",
+      "year_start": 2022,
+      "department": "24 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王詠翔",
+      "name_en": "Yung-Hsiang Wang",
+      "year_start": 2022,
+      "department": "23 LS, LS phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾子洋",
+      "name_en": "Tzu-Yang Tseng",
+      "year_start": 2022,
+      "department": "23 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳奕璇",
+      "name_en": "Yi-Xuan Chen",
+      "year_start": 2021,
+      "department": "23 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "郭泉浩",
+      "name_en": "",
+      "year_start": 2021,
+      "department": "23 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "孫懿筠",
+      "name_en": "Yih-Yun Sun",
+      "year_start": 2021,
+      "department": "23 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "笠皓恵",
+      "name_en": "Akie Ryu",
+      "year_start": 2022,
+      "department": "23 Exchange student from Kyushu University",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林欣奕",
+      "name_en": "Shin-Yee Lim",
+      "year_start": 2022,
+      "department": "23 BEBI, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "劉婕妤",
+      "name_en": "Jie-Yu Liu",
+      "year_start": 2020,
+      "department": "22 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張凱傑",
+      "name_en": "Kai-Jay Chang",
+      "year_start": 2020,
+      "department": "22 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王茜淳",
+      "name_en": "Xi-Chun Wang",
+      "year_start": 2020,
+      "department": "22 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳致余",
+      "name_en": "Jhih-Yu Chen",
+      "year_start": 2020,
+      "department": "22 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳冠雅",
+      "name_en": "Kuan-Ya Chen",
+      "year_start": 2021,
+      "department": "22 BEBI; 20-21 GSB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林顏修淇",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "22 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李律",
+      "name_en": "Albert L. Lee",
+      "year_start": 2019,
+      "department": "22 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林芳榆",
+      "name_en": "Fang-Yu Lin",
+      "year_start": 2019,
+      "department": "21 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "葉襄凝",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "21 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張庭毓",
+      "name_en": "Ting-Yu Chang",
+      "year_start": 2019,
+      "department": "21 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張皓鈞",
+      "name_en": "Hao-Chun Chang",
+      "year_start": 2018,
+      "department": "20 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "范雅智",
+      "name_en": "Ya-Chih Fan",
+      "year_start": 2018,
+      "department": "20 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Catherine Grace Dillera de Jesus",
+      "year_start": 2019,
+      "department": "20 Exchange student from Department of Chemistry, University of Hamburg",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "廖玉潔",
+      "name_en": "Y-Geh Liaw",
+      "year_start": 2017,
+      "department": "19 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張乃文",
+      "name_en": "Nai-Wen Chang",
+      "year_start": 2017,
+      "department": "19 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王嘉琪",
+      "name_en": "Chia-Chi Wang",
+      "year_start": 2017,
+      "department": "19 MCB; GSB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李偉豪",
+      "name_en": "Wei-Hao Lee",
+      "year_start": 2017,
+      "department": "19 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "蔡漢萱",
+      "name_en": "Han-Hsuan Tsai",
+      "year_start": 2017,
+      "department": "19 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李文琦",
+      "name_en": "Wen-Chi Lee",
+      "year_start": 2016,
+      "department": "19 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "唐承緯",
+      "name_en": "Cheng-Wei Tang",
+      "year_start": 2016,
+      "department": "18 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "侯恁慈",
+      "name_en": "Jen-Tzu Hou",
+      "year_start": 2016,
+      "department": "18 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林詩涵",
+      "name_en": "Shih-Han Lin",
+      "year_start": 2016,
+      "department": "18 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鍾昀憲",
+      "name_en": "",
+      "year_start": 2015,
+      "department": "17 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳長勳",
+      "name_en": "",
+      "year_start": 2015,
+      "department": "17 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃鼎育",
+      "name_en": "Ding-Yu Huang",
+      "year_start": 2015,
+      "department": "17 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "楊紫文",
+      "name_en": "",
+      "year_start": 2015,
+      "department": "17 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "洪詣軒",
+      "name_en": "Yi-Hsuan Hung",
+      "year_start": 2015,
+      "department": "17 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳旻君",
+      "name_en": "Min Chun Chen",
+      "year_start": 2015,
+      "department": "17 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄭辰彥",
+      "name_en": "Norton Cheng",
+      "year_start": 2014,
+      "department": "16 LS",
+      "research": [
+        "@ University of California San Diego"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王薇瑄",
+      "name_en": "Wei-Hsuan Wang",
+      "year_start": 2014,
+      "department": "16 GSB; GSB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "謝巧慧",
+      "name_en": "Chiao-Hui Hsieh",
+      "year_start": 2014,
+      "department": "16 MCB; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "侯君里",
+      "name_en": "Chun-Li Hou",
+      "year_start": 2014,
+      "department": "16 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林采羭",
+      "name_en": "Tsai-Yu Lin",
+      "year_start": 2014,
+      "department": "16 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳允芃",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "16 BEBI",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳湘鈞",
+      "name_en": "Xiang-Jun Chen",
+      "year_start": 2014,
+      "department": "16 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳凱普",
+      "name_en": "Kai-Pu Chen",
+      "year_start": 2013,
+      "department": "15 BEBI; BEBI phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "柯逵悅",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "17 GSB",
+      "research": [
+        "@ Duke University"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王建凱",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 GSB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "崔昭胤",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "郭子霆",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "高士傑",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張曉婷",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳瑋庭",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "15 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "何亮融",
+      "name_en": "Andy Ho",
+      "year_start": 2012,
+      "department": "14 BEBI, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李明樺",
+      "name_en": "Ming-Hua Li",
+      "year_start": 2012,
+      "department": "14 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳思凱",
+      "name_en": "Szu-Kai Chen",
+      "year_start": 2011,
+      "department": "13 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "徐寬豪",
+      "name_en": "Kuan-Hao Hsu",
+      "year_start": 2011,
+      "department": "13 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳怡萱",
+      "name_en": "Yi-Hsuan Wu",
+      "year_start": 2011,
+      "department": "12 MCB",
+      "research": [
+        "@University of San Francisco"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李佳憲",
+      "name_en": "Chia-Hsien Lee",
+      "year_start": 2010,
+      "department": "12 BEBI; BEBI phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "柯曉雲",
+      "name_en": "",
+      "year_start": 2010,
+      "department": "12 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "石孟禾",
+      "name_en": "",
+      "year_start": 2010,
+      "department": "12 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "蔡惠婷",
+      "name_en": "",
+      "year_start": 2010,
+      "department": "12 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "莊凱能",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "蔡聖爵",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王宣凱",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳家琪",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳乃寧",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳亞任",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "11 BEBI, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "尹存瑄",
+      "name_en": "Tsun-Hsuan Yi",
+      "year_start": 2008,
+      "department": "10 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳成諭",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "10 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許仲誠",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "10 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "周宜德",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "10 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳聿笙",
+      "name_en": "Yu-Sheng Wu",
+      "year_start": 2008,
+      "department": "10 BEBI, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "賴威延",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "MCB, dropout",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳卓逸",
+      "name_en": "Cho-Yi Chen",
+      "year_start": 2007,
+      "department": "09 BEBI, w/ Prof. Huang; AS ra",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張雅菱",
+      "name_en": "Ya-Ling Chang",
+      "year_start": 2007,
+      "department": "09 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "胡伯宇",
+      "name_en": "",
+      "year_start": 2007,
+      "department": "09 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張雅雅",
+      "name_en": "",
+      "year_start": 2007,
+      "department": "09 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "胡家瑋",
+      "name_en": "Chia-Wei Hu",
+      "year_start": 2007,
+      "department": "08 MCB; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳定遠",
+      "name_en": "Ting-Yuan Chen",
+      "year_start": 2006,
+      "department": "08 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "程凱麟",
+      "name_en": "Kai-Lin Cheng",
+      "year_start": 2006,
+      "department": "08 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許家維",
+      "name_en": "Jia-Wei Hsu",
+      "year_start": 2006,
+      "department": "08 MCB",
+      "research": [
+        "@ NTU-Mol. Medicine"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李姿瑩",
+      "name_en": "Tzu-ying Lee",
+      "year_start": 2006,
+      "department": "08 MCB; ra",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張心儀",
+      "name_en": "Hsin-Yi Chang",
+      "year_start": 2006,
+      "department": "08 MCB; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林振慶",
+      "name_en": "Cheng-Chin Lin",
+      "year_start": 2005,
+      "department": "07 YM-BMI, w/ Prof. Huang; BEBI phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳筱瑋",
+      "name_en": "Hsiao-Wei Chen",
+      "year_start": 2005,
+      "department": "07 BME, w/ BME Prof. Win-Li Lin; 07-08 pra",
+      "research": [
+        "@ NCSU"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張佑瑋",
+      "name_en": "Yu-Wei Chang",
+      "year_start": 2005,
+      "department": "07 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳正寶",
+      "name_en": "Cheng-Pao Chen",
+      "year_start": 2005,
+      "department": "07 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "倪國欽",
+      "name_en": "Kuo-Chin Ni",
+      "year_start": 2005,
+      "department": "07 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "施景耀",
+      "name_en": "Ching-Yaa Shih",
+      "year_start": 2005,
+      "department": "07 MCB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林俐伶",
+      "name_en": "Li-Ling Lin",
+      "year_start": 2005,
+      "department": "06 MCB; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李昆學",
+      "name_en": "Kung-Hsueh Lee",
+      "year_start": 2004,
+      "department": "07 NTNU-LS, w/ Prof. Y.C.Wang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林南西",
+      "name_en": "Nancy Lin",
+      "year_start": 2004,
+      "department": "06 IBS, w/ Prof. Huang & IBS Prof. Shih-Horng Chiou",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "章人勻",
+      "name_en": "Jen-Yun Chang",
+      "year_start": 2004,
+      "department": "06 YM-BMI, w/ Prof. Huang; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張智欽",
+      "name_en": "Chi-Chin Chang",
+      "year_start": 2004,
+      "department": "06 YM-BMI, w/ Prof. Huang; YM-BMI ra",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄭昆杰",
+      "name_en": "Kun-Chieh Cheng",
+      "year_start": 2004,
+      "department": "06 NTUT-IB",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾建偉",
+      "name_en": "Chien-Wei Tseng",
+      "year_start": 2004,
+      "department": "05 MCB; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃翠琴",
+      "name_en": "Tsui-Chin Huang",
+      "year_start": 2003,
+      "department": "05 NTUT-BE; MCB phd",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李嘉哲",
+      "name_en": "Jia-Je Li",
+      "year_start": 2003,
+      "department": "05 CCU-CSIE, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張幸娟",
+      "name_en": "Shing-Chuan Chang",
+      "year_start": 2003,
+      "department": "05 NTUT-ChE",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "王怡琇",
+      "name_en": "I-H Wang",
+      "year_start": 2002,
+      "department": "04 NTUT-ChE",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李弘之",
+      "name_en": "Hong-Chih Lee",
+      "year_start": 2022,
+      "department": "25 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "胡凱捷",
+      "name_en": "Kai-Jie Hu",
+      "year_start": 2022,
+      "department": "25 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "苑欣佑",
+      "name_en": "Hsin-Yo Yuan",
+      "year_start": 2023,
+      "department": "25 BST; BEBI ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "翁瑋廷",
+      "name_en": "Wei-Ting Weng",
+      "year_start": 2022,
+      "department": "24 Med",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "劉奕辰",
+      "name_en": "I-Chen Liu",
+      "year_start": 2022,
+      "department": "24 Med",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "廖映宸",
+      "name_en": "",
+      "year_start": 2023,
+      "department": "Med",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "葉孟婷",
+      "name_en": "",
+      "year_start": 2022,
+      "department": "23 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許家芸",
+      "name_en": "Chia-Yun Hsu",
+      "year_start": 2022,
+      "department": "23 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林詩敏",
+      "name_en": "",
+      "year_start": 2021,
+      "department": "CS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李沂霈",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "22 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "郭泉浩",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "21 BST; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李哲源",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "21 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "曾子洋",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "22 LS; BEBI ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "劉致陞",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "21 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林顏修淇",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 Forest; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃子家",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 Chung Shan Medical University",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張耀中",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 PHARM",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許鈺瀅",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 福建農林大學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Elly Yu-Jen Hung",
+      "year_start": 2019,
+      "department": "University of Manchester",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李律",
+      "name_en": "Albert L. Lee",
+      "year_start": 2018,
+      "department": "19 School of Medicine, Taipei Medical University; BEBI ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "蔡依庭",
+      "name_en": "Yi-Ting Tsai",
+      "year_start": 2017,
+      "department": "18 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張皓鈞",
+      "name_en": "Hao-Chun Chang",
+      "year_start": 2016,
+      "department": "18 BST bs; BEBI ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "孫珮文",
+      "name_en": "",
+      "year_start": 2016,
+      "department": "18 BST",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李承翰",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "17 School of Medicine",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "周蒂",
+      "name_en": "Ti Chou",
+      "year_start": 2014,
+      "department": "16 BST",
+      "research": [
+        "@ Johns Hopkins University"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "錢昕",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "16 School of Medicine",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳龍輝",
+      "name_en": "Chen Long-Huei",
+      "year_start": 2014,
+      "department": "15 EE",
+      "research": [
+        "@ Stanford University"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃鼎育",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "15 LS; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "崔昭胤",
+      "name_en": "",
+      "year_start": 2011,
+      "department": "13 LS; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "夏頡仁",
+      "name_en": "",
+      "year_start": 2011,
+      "department": "13 LS",
+      "research": [
+        "@ Cornell University"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳柏緯",
+      "name_en": "",
+      "year_start": 2011,
+      "department": "12 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "沈梅",
+      "name_en": "Mae Shen",
+      "year_start": 2010,
+      "department": "LS, The University of Rhode Island",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林秀娟",
+      "name_en": "",
+      "year_start": 2009,
+      "department": "12 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳怡萱",
+      "name_en": "Yi-Hsuan Wu",
+      "year_start": 2008,
+      "department": "11 LS; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李佳憲",
+      "name_en": "Chia-Hsien Lee",
+      "year_start": 2008,
+      "department": "10 LS; BEBI ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "莊凱能",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "09 LS; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "魏妤真",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "09 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李孟達",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "VM",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳昇原",
+      "name_en": "",
+      "year_start": 2008,
+      "department": "ME",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "吳家宜",
+      "name_en": "Chia-Yi Wu",
+      "year_start": 2006,
+      "department": "09 LS",
+      "research": [
+        "@ UCSD Bioinformatics"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "尹存瑄",
+      "name_en": "Tsun-Hsuan Yi",
+      "year_start": 2006,
+      "department": "08 NTNU-LS, MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "周宜德",
+      "name_en": "",
+      "year_start": 2006,
+      "department": "08 BST; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "盧子彬",
+      "name_en": "Tzu-Pin Lu",
+      "year_start": 2006,
+      "department": "07 EE & LS, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "歐承翰",
+      "name_en": "Chern-Han Ou",
+      "year_start": 2005,
+      "department": "07 EE & LS, w/ Prof. Huang",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李家璿",
+      "name_en": "Chia-Shyuan Lee",
+      "year_start": 2005,
+      "department": "06 LS; part-time ra",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳定遠",
+      "name_en": "Ting-Yuan Chen",
+      "year_start": 2005,
+      "department": "06 BST; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林奕瑄",
+      "name_en": "Yi-Hsuan Lin",
+      "year_start": 2005,
+      "department": "06 LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳與祥",
+      "name_en": "",
+      "year_start": 2005,
+      "department": "06 NTNU-LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "白正康",
+      "name_en": "",
+      "year_start": 2005,
+      "department": "06 NTNU-LS",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張心儀",
+      "name_en": "Hsin-Yi Chang",
+      "year_start": 2004,
+      "department": "06 NTNU-LS; MCB ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李嘉哲",
+      "name_en": "Jia-Je Li",
+      "year_start": 2002,
+      "department": "03 NTUST-CSIE, w/ Prof. Huang; CCU-CSIE ms",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林琬苹",
+      "name_en": "",
+      "year_start": 2024,
+      "department": "25 TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張薰文",
+      "name_en": "",
+      "year_start": 2023,
+      "department": "25 TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李欣憙",
+      "name_en": "",
+      "year_start": 2023,
+      "department": "24 TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "周芸平",
+      "name_en": "",
+      "year_start": 2023,
+      "department": "24 TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "凃凱翔",
+      "name_en": "",
+      "year_start": 2021,
+      "department": "22 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "許澤厚",
+      "name_en": "",
+      "year_start": 2021,
+      "department": "21 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "李允中",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "22 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳頤萱",
+      "name_en": "",
+      "year_start": 2020,
+      "department": "21 TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳畇銨",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "21 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃軒廷",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "21 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃聖傑",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "21 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "顏頎翰",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "江宜蓁",
+      "name_en": "",
+      "year_start": 2019,
+      "department": "20 臺北市私立復興實驗高級中學雙語部",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃佑聖",
+      "name_en": "",
+      "year_start": 2016,
+      "department": "18, CKHS 建國中學",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "顏奕瑄",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "15, CKHS 建國中學",
+      "research": [
+        "@ NTU-School of Medicine"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄧逸軒",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "15, CKHS 建國中學",
+      "research": [
+        "@ NTU-Department of Computer Science & Information Engineering"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "楊皓雲",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "15, TFG 北一女中",
+      "research": [
+        "@ NDMC-School of Medicine"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "黃琬珈",
+      "name_en": "",
+      "year_start": 2014,
+      "department": "15, TFG 北一女中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "倪成昀",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "14, HSNU 師大附中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳俐芸",
+      "name_en": "",
+      "year_start": 2013,
+      "department": "14, HSNU 師大附中",
+      "research": [],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "張惟程",
+      "name_en": "",
+      "year_start": 2012,
+      "department": "13, NSSH 南山高中",
+      "research": [
+        "@ NCCU-Department of Computer Science"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "林廷韋",
+      "name_en": "",
+      "year_start": 2012,
+      "department": "13, NSSH 南山高中",
+      "research": [
+        "@ NCCU-Department of Psychology"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "卓義豐",
+      "name_en": "",
+      "year_start": 2012,
+      "department": "13, CKHS 建國中學",
+      "research": [
+        "@ YM-Department of Dentistry"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "陳源灝",
+      "name_en": "",
+      "year_start": 2012,
+      "department": "13, CKHS 建國中學",
+      "research": [
+        "@ NCTU-Department of Computer Science"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "鄭鈞之",
+      "name_en": "",
+      "year_start": 2011,
+      "department": "12, CKHS 建國中學",
+      "research": [
+        "@ NTU-School of Medicine"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "邱尉丞",
+      "name_en": "",
+      "year_start": 2011,
+      "department": "12, CKHS 建國中學",
+      "research": [
+        "@ TMU-School of Medicine"
+      ],
+      "photo": null,
+      "email": null
+    },
+    {
+      "name_zh": "",
+      "name_en": "Vicky Liao",
+      "year_start": 2010,
+      "department": "Taipei American School",
+      "research": [],
+      "photo": null,
+      "email": null
+    }
+  ],
+  "postdocs": [
+    {
+      "name_zh": "高翊竣",
+      "name_en": "Yi-Chun Kao",
+      "year_start": 2024,
+      "department": "17-24 LS phd; 16-17 LS ms",
+      "research": [
+        "Molecular and cellular biology Extracellular vesicles in cancer progression Role of ATP synthase in cell-cell communications"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=d62263&media=members:yi_chun_kao.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "杜岳華",
+      "name_en": "Yueh-Hua Tu",
+      "year_start": 2025,
+      "department": "19-23 TIGP phd, w/ Prof. Huang",
+      "research": [
+        "Computational biology Systems biology Graph machine learning/Geometric deep learning"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=0815c8&media=members:yueh_hua_tu_2.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "楊靜佳",
+      "name_en": "Ching-Chia Yang",
+      "year_start": 2025,
+      "department": "",
+      "research": [
+        "Omics analysis Bioinformatics"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=16b672&media=members:ching_chia_yang_2.jpg",
+      "email": null
+    },
+    {
+      "name_zh": "游佩蓁",
+      "name_en": "Pei-Chen Yu",
+      "year_start": 2025,
+      "department": "18-25 MCB phd",
+      "research": [
+        "Molecular and cellular biology Cancer research Drug discovery for neuroblastoma"
+      ],
+      "photo": "https://sbl.csie.org/JuanLab/lib/exe/fetch.php?w=120&tok=a8b0e8&media=members:%E6%B8%B8%E4%BD%A9%E8%93%81.jpg",
       "email": null
     }
   ]

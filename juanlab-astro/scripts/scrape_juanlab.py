@@ -363,32 +363,86 @@ def extract_people(soup: BeautifulSoup) -> dict:
         "博士後": "postdocs",
     }
     
-    # Pattern for member entries
-    # Format: 中文名 English Name (YY- DEPT) Research areas
-    member_pattern = re.compile(
-        r'^([^\(]+?)\s*\((\d{2})-?\s*(\w*)\)\s*(.*)$'
-    )
+    is_alumni_section = False
     
-    for element in content.find_all(["h1", "h2", "h3", "h4", "li", "p"]):
+    # Flexible pattern: Name (Info) ...
+    # Captures: Name, Info found in first parens
+    member_pattern = re.compile(r'^([^\(]+?)\s*\(([^)]+)\)(.*)$')
+    
+    for element in content.find_all(["h1", "h2", "h3", "h4", "li", "p", "tr"]):
         text = clean_text(element.get_text())
+        if not text:
+            continue
+            
         text_lower = text.lower()
         
         # Check for category headers
         if element.name in ["h1", "h2", "h3", "h4"]:
+            # Check if entering Alumni section
+            if "alumni" in text_lower:
+                is_alumni_section = True
+                current_category = "alumni"
+                continue
+
+            # Check if entering a section that might reset Alumni (e.g. Visiting if considered current)
+            # But usually Alumni is at the end. 
+            # If we hit a known category header:
+            category_found = False
             for keyword, category in category_keywords.items():
                 if keyword in text_lower:
-                    current_category = category
+                    category_found = True
+                    # If we are in alumni section, standard roles map to alumni list
+                    if is_alumni_section: 
+                        if category in ["phd_students", "masters_students", "undergrads", "postdocs"]:
+                            current_category = "alumni"
+                        else:
+                            # Visiting or others, keep as matches (e.g. visiting might be distinct)
+                            current_category = category
+                    else:
+                        current_category = category
                     break
+            
+            # If header didn't match any category, we keep previous category or wait?
+            # If it's just "Table of Contents" ignore.
         
-        # Extract member info from list items
-        if element.name == "li" and current_category:
+        # Extract member info from list items or paragraphs/table rows
+        if element.name in ["li", "p", "tr"] and current_category:
+            # Skip if it's just a spacer or empty
+            if not text or len(text) < 2:
+                continue
+
+            # Debug what we are seeing in current categories (excluding alumni to reduce noise)
+            if current_category in ["phd_students", "masters_students", "postdocs"] and not is_alumni_section:
+               print(f"DEBUG: Checking {element.name} in {current_category}: '{text[:50]}...'")
+
             # Try to parse member format
             match = member_pattern.match(text)
             if match:
-                name_part, year_start, dept, research = match.groups()
+                name_part = match.group(1).strip()
+                info_part = match.group(2).strip()
+                rest_part = match.group(3).strip()
                 
+                # Parse Year and Dept from info_part
+                # Examples: "23- Med", "20-21 LS", "19-22 LS; BEBI ms"
+                year_start = 2024 # Default
+                dept = ""
+                
+                # Find first 2 digits
+                year_match = re.search(r'(\d{2})', info_part)
+                if year_match:
+                    y_str = year_match.group(1)
+                    year_val = int(y_str)
+                    year_start = 2000 + year_val if year_val < 50 else 1900 + year_val
+                    
+                    # Remove year from info to find Dept?
+                    # valid dept text usually follows year
+                    # Simple heuristic: take everything after the year digits?
+                    dept = info_part.replace(y_str, "", 1).strip(" -;,")
+                else:
+                    dept = info_part # No year found
+
                 # Split Chinese and English names
-                name_parts = name_part.strip().split()
+                name_parts = name_part.split()
                 name_zh = ""
                 name_en = ""
                 
@@ -398,8 +452,8 @@ def extract_people(soup: BeautifulSoup) -> dict:
                     else:
                         name_en = (name_en + " " + part).strip()
                 
-                # Parse research areas
-                research_areas = [r.strip() for r in research.split(",") if r.strip()] if research else []
+                # Parse research areas (from rest_part)
+                research_areas = [r.strip() for r in rest_part.split(",") if r.strip()]
                 
                 # Extract photo if present
                 img = element.find("img")
@@ -416,7 +470,7 @@ def extract_people(soup: BeautifulSoup) -> dict:
                 member = {
                     "name_zh": name_zh,
                     "name_en": name_en,
-                    "year_start": 2000 + int(year_start) if int(year_start) < 50 else 1900 + int(year_start),
+                    "year_start": year_start,
                     "department": dept,
                     "research": research_areas,
                     "photo": photo_url,
@@ -424,7 +478,49 @@ def extract_people(soup: BeautifulSoup) -> dict:
                 }
                 
                 people[current_category].append(member)
-    
+            else:
+                # Fallback: if no parens, might be just "Name" or "Name, Info"
+                # Check if it looks like a person entry (not empty)
+                text_clean = text.strip()
+                if len(text_clean) > 1 and len(text_clean) < 50:
+                    print(f"DEBUG: Unmatched LI: '{text}' -> using as Name")
+                    # Assume entire text is name? Or format: "Name Title"
+                    # Just use as name for now
+                    
+                    # Check if there are years in the text?
+                    year_start = 2024
+                    dept = ""
+                    name = text_clean
+                    
+                    # Try to find year if any
+                    year_match = re.search(r'(\d{4})', text_clean)
+                    if not year_match:
+                         # Try 2 digits
+                         year_match = re.search(r'\b(\d{2})\b', text_clean) # word boundary
+                    
+                    if year_match:
+                        # If year found, maybe extract it?
+                        pass 
+                        
+                    member = {
+                        "name_zh": name if re.search(r'[\u4e00-\u9fff]', name) else "",
+                        "name_en": name if not re.search(r'[\u4e00-\u9fff]', name) else "",
+                        "year_start": year_start,
+                        "department": "",
+                        "research": [],
+                        "photo": None,
+                        "email": None,
+                    }
+                    
+                    # Try to find photo in this LI even if text didn't match
+                    img = element.find("img")
+                    if img:
+                        member["photo"] = make_absolute_url(img.get("src", ""))
+                        
+                    people[current_category].append(member)
+                else:
+                    print(f"DEBUG: Skipping LI: '{text}'")
+
     return people
 
 
